@@ -2,6 +2,7 @@
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif; /* Set Arial as the font-family */
   }
   
   /* Basic styling for container layout */
@@ -9,30 +10,48 @@ body, h1, h2, h3, p, ul, li {
     display: flex;
   }
   
-  /* Styling for contact info sidebar */
-  .contact-info {
+  /* Styling for left section */
+  .left-section {
     flex: 1;
     background-color: #f2f2f2;
     padding: 20px;
   }
   
-  /* Styling for table of contents */
-  .table-of-contents {
-    flex: 1;
-    background-color: #f9f9f9;
-    padding: 20px;
-    position: sticky;
-    top: 0;
+  /* Styling for name, title, motto */
+  .left-section h1, .left-section h2, .left-section p {
+    font-weight: bold;
+    margin-bottom: 10px;
   }
   
-  /* Styling for main content area */
-  main {
+  /* Styling for table of contents */
+  .table-of-contents {
+    margin-top: 20px;
+  }
+  
+  /* Styling for table of contents links */
+  .table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .table-of-contents li {
+    margin-bottom: 10px;
+  }
+  
+  .table-of-contents a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Styling for right section */
+  .right-section {
     flex: 2;
     padding: 20px;
   }
   
   /* Additional styling for individual sections */
-  .intro, .work-experience, .projects {
+  .intro, .work-experience, .projects, .interests {
     margin-bottom: 40px;
   }
   
