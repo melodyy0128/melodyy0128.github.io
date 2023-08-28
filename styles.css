@@ -75,5 +75,30 @@ body, h1, h2, h3, p, ul, li {
     margin-bottom: 20px;
   }
   
-  /* Add more styling as needed */
+  /* Styling for experience blocks */
+  .experience-block {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .experience-block h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .date, .company {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .experience-list {
+    margin-left: 20px;
+  }
+  
+  .experience-list li {
+    margin-bottom: 10px;
+  }
+  
   
