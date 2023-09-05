@@ -1,93 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Your Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/f-logo.png">
+    <title>Melodychan Portfolio</title>
+
+    <!-- Fontawesome - for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body>
-  <div class="container">
-    <aside class="left-section">
-      <h1>Melody Chan</h1>
-      <h2>Software Engineer</h2>
-      <p>work work work work work</p>
-      <!-- Your contact information goes here -->
-      <nav class="table-of-contents">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#interests">Personal Interests</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <main class="right-section">
-      <section id="about" class="intro">
-        <h2>About</h2>
-        <!-- About content goes here -->
-      </section>
-      <section id="experience" class="work-experience">
-        <h2>Experience</h2>
-      
-        <!-- Part-time Software Engineer -->
-        <div class="experience-block">
-          <h3>Part-time Software Engineer</h3>
-          <p class="date">May 2023 - Present</p>
-          <p class="company">Bepsun New Business Systems Inc.</p>
-          <ul class="experience-list">
-            <li>Communicated with team members to clarify project functionalities, define requirements, and establish timelines.</li>
-            <li>Developed project proposals for a product-selling video sharing application, designed to seamlessly integrate with the company's B2B e-commerce system (UCCP).</li>
-          </ul>
+<body class="body">
+
+<!-- about -->
+<main class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="a-div">
+                    <small>About Me</small>
+                    <h1 class="fw-bold">Melody Chan</h1>
+                    <h5>Software Engineer</h5>
+                    <p class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                    <ul class="list-1">
+                        <li><a href="#education" class="btn about-btn btn-1">Education</a></li>
+                        <li><a href="#skills" class="btn about-btn btn-1">Skills</a></li>
+                        <li><a href="#experience" class="btn about-btn btn-2">Work Experience</a></li>
+                    </ul>
+                    <ul class="list-1">
+                        <li><a href="#projects" class="btn about-btn btn-1">Projects</a></li>
+                        <li><a href="" class="btn about-btn btn-1">Resume</a></li>
+                        <li><a href="#interests" class="btn about-btn btn-2">Personal Interests</a></li>
+                    </ul>
+                    <a href="mailto:info@gmail.com" class="btn email-btn">Email Me</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 o-2">
+                <div class="p-div">
+                    <div class="c-div">
+                        <img src="images/about-image.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-12 o-3">
+                <div class="p-div pm-div">
+                    <div class="c-div cm-div">
+                        <ul class="social-list">
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-github"></i></a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      
-        <!-- Researcher -->
-        <div class="experience-block">
-          <h3>Researcher</h3>
-          <p class="date">Sep 2022 - May 2023</p>
-          <p class="company">Boston University Computer Science Department</p>
-          <ul class="experience-list">
-            <li>Aimed to improve predictability and efficiency of real-time systems through cache management strategies and memory hypervisors in Linux ARM.</li>
-            <li>Manually flashed and rebooted NVIDIA Jetson TX1 and Xavier modules to set up the systems for research.</li>
-            <li>Applied memory contention on specified cores using real-time benchmarks and observed impacts of core interference.</li>
-            <li>Implemented cache partitioning techniques utilizing black-box profiling benchmarks to analyze memory access patterns and improve application latency.</li>
-          </ul>
+    </div>
+</main>
+
+<!-- Education -->
+<section class="education" id="education">
+    <div class="container">
+        <h1 class="fw-bold text-center">Education</h1>
+        <div class="edu-flex">
+            <div class="master">
+                <p class="date">Sep 2021 - May 2023</p>
+                <h4 class="fw-bold pt-2">Master of Science</h4>
+                <h6 class="fw-bold">Major: Computer Science</h6>
+                <p class="m-text">Graduate School of Arts and Sciences,
+                    Boston University</p>
+            </div>
+            <div class="master">
+                <p class="date-2">Sep 2021 - May 2023</p>
+                <h4 class="fw-bold pt-2">Bachelor of Arts</h4>
+                <h6 class="fw-bold">Major: Computer Science</h6>
+                <p class="m-text">College of Arts and Science, Boston University Minor:
+                    Business Administration and Management Questrom
+                    School of Business, Boston University</p>
+            </div>
         </div>
-      
-        <!-- Computer Science Teaching Assistant -->
-        <div class="experience-block">
-          <h3>Computer Science Teaching Assistant</h3>
-          <p class="date">Sep 2022 - Dec 2022</p>
-          <p class="company">Boston University Computer Science Department</p>
-          <ul class="experience-list">
-            <li>Assisted Professor with course preparation and grading for the "Fundamentals of Computer Systems" class, attended by 120+ students.</li>
-            <li>Formulated exams and assignments related to real-time scheduling and multithreading in Java.</li>
-            <li>Held weekly lab sessions and office hours to communicate with and support students.</li>
-          </ul>
+    </div>
+</section>
+
+<!-- Skills -->
+<section class="skills" id="skills">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="skills-all">
+                <h1 class="fw-bold">Skills</h1>
+                <div class="skill-div">
+                    <small class="fw-bold">1.</small>
+                    <h3>Programming Language:</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                </div>
+                <div class="skill-div">
+                    <small class="fw-bold">2.</small>
+                    <h3>Android App Development:</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                </div>
+                <div class="skill-div">
+                    <small class="fw-bold">3.</small>
+                    <h3>Project Management:</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                </div>
+            </div>
         </div>
-      
-        <!-- IT Group Member -->
-        <div class="experience-block">
-          <h3>IT Group Member</h3>
-          <p class="date">Sep 2019 - Sep 2021</p>
-          <p class="company">BUCSSA (Student Association)</p>
-          <ul class="experience-list">
-            <li>Provided innovative ideas for advertising strategies.</li>
-            <li>Participated in both the production and filming of marketing videos for stores partnering with the organization.</li>
-          </ul>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="float-img">
+                <img src="images/shade-1.png" class="img-fluid shade-1" alt="">
+            </div>
         </div>
-      
-      </section>
-      
-      <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <!-- Project blocks go here -->
-      </section>
-      <section id="interests" class="interests">
-        <h2>Personal Interests</h2>
-        <!-- Interests content goes here -->
-      </section>
-    </main>
-  </div>
+    </div>
+</section>
+
+<!-- Work Experience -->
+<section class="work" id="experience">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 o-2">
+                <div class="p-div">
+                    <div class="c-div f-img-div">
+                        <img src="images/Frame.png" class="img-fluid frame-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 o-3">
+                <div class="p-div">
+                    <div class="c-div">
+                        <h1 class="fw-bold pb-5">Work Experience</h1>
+                        <small class="fw-bold">July - Dec 2016</small>
+                        <p class="work-sub">Software Engineer Co-op . Starry</p>
+                        <ul class="tags-list">
+                            <li><button class="btn btn-tag">Cordova</button></li>
+                            <li><button class="btn btn-tag">Backbone</button></li>
+                            <li><button class="btn btn-tag">JavaScript</button></li>
+                            <li><button class="btn btn-tag">CSS</button></li>
+                        </ul>
+                        <p>Worked with the UI team to engineer and improve major feature of Starry’s customer -facing Android app.</p>
+                        <ul class="links-list">
+                            <li><a href="" class="purple"><img src="images/p-link.png" width="21" height="21" alt="">&nbsp;Android App</a></li>
+                            <li><a href="" class="green"><img src="images/g-link.png" width="21" height="21" alt="">&nbsp;Screen Time 2.0</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects-section" id="projects">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="skills-all">
+                    <h1 class="fw-bold pb-5">Projects</h1>
+                    <div class="projects">
+                        <small class="fw-bold">July - Dec 2016</small>
+                        <p class="work-sub">Software Engineer Co-op . Starry</p>
+                        <ul class="tags-list">
+                            <li><button class="btn btn-tag">Cordova</button></li>
+                            <li><button class="btn btn-tag">Backbone</button></li>
+                            <li><button class="btn btn-tag">JavaScript</button></li>
+                            <li><button class="btn btn-tag">CSS</button></li>
+                        </ul>
+                        <p>Worked with the UI team to engineer and improve major feature of Starry’s customer -facing Android app.</p>
+                        <ul class="links-list">
+                            <li><a href="" class="purple"><img src="images/p-link.png" width="21" height="21" alt="">&nbsp;Android App</a></li>
+                            <li><a href="" class="green"><img src="images/g-link.png" width="21" height="21" alt="">&nbsp;Screen Time 2.0</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="projects">
+                        <small class="fw-bold">July - Dec 2016</small>
+                        <p class="work-sub">Software Engineer Co-op . Starry</p>
+                        <ul class="tags-list">
+                            <li><button class="btn btn-tag">Cordova</button></li>
+                            <li><button class="btn btn-tag">Backbone</button></li>
+                            <li><button class="btn btn-tag">JavaScript</button></li>
+                            <li><button class="btn btn-tag">CSS</button></li>
+                        </ul>
+                        <p>Worked with the UI team to engineer and improve major feature of Starry’s customer -facing Android app.</p>
+                        <ul class="links-list">
+                            <li><a href="" class="purple"><img src="images/p-link.png" width="21" height="21" alt="">&nbsp;Android App</a></li>
+                            <li><a href="" class="green"><img src="images/g-link.png" width="21" height="21" alt="">&nbsp;Screen Time 2.0</a></li>
+                        </ul>
+                </div>
+                </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="images/shade-2.png" class="img-fluid" style="float: right" alt="">
+        </div>
+    </div>
+</section>
+
+<!-- Personal Interests -->
+<section class="interests" id="interests">
+    <div class="container">
+        <h1 class="fw-bold text-center">Personal Interests</h1>
+        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img src="images/project.png" class="img-fluid" alt="Project">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img src="images/project.png" class="img-fluid" alt="Project">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img src="images/project.png" class="img-fluid" alt="Project">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img src="images/project.png" class="img-fluid" alt="Project">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <img src="images/f-logo.png" class="img-fluid" alt="">
+        <p>&copy; Copyright 2023. All Rights Reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
