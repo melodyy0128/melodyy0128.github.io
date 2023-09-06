@@ -175,10 +175,9 @@ small{
 }
 .interests{
     padding-bottom: 100px;
-    margin-top: -200px;
+    padding-top: 100px;
 }
 .footer{
-    background-color: white;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -248,6 +247,11 @@ small{
     }
     .btn-tag{
         font-size: 12px;
+    }
+    .btn-keep-inline {
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
     }
     .frame-img{
         padding-top: 40px;
