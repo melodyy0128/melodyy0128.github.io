@@ -287,11 +287,6 @@ small{
     .slick-slide img{
         min-width: 100%;
     }
-    .slider-row .img-fluid {
-        width: 300px !important;
-        height: 200px !important;
-        object-fit: cover !important;
-    }
 
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -335,5 +330,4 @@ small{
    .email-btn{
        width: 75%;
    }
-
 }
