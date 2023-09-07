@@ -42,21 +42,16 @@ html{
     border: 1px solid black;
     padding-block: 10px;
     padding-inline: 20px;
+    width: 180px;
 }
 .about-btn:hover{
     background-color: black !important;
     color: white !important;
 }
-.btn-1{
-    width: 125px;
-}
-.btn-2{
-    width: 200px;
-}
 .email-btn{
     background-color: black !important;
     color: white !important;
-    width: 75%;
+    width: 90%;
     margin-top: 10px;
     padding-block: 10px;
 }
@@ -134,6 +129,7 @@ small{
 }
 .frame-img{
     width: 75%;
+    vertical-align: top;
 }
 .work-sub{
     color: #EBAD48;
@@ -170,12 +166,16 @@ small{
     font-weight: bold;
     text-decoration: none;
 }
+.orange{
+    color: #EF8D4D;
+    font-weight: bold;
+    text-decoration: none;
+}
 .projects-section{
     padding-top: 100px;
 }
 .interests{
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding-block: 70px;
 }
 .footer{
     text-align: center;
@@ -184,6 +184,12 @@ small{
 }
 .a-div{
     padding-top: 30px;
+}
+.work{
+    padding-top: 60px;
+}
+.projects{
+    margin-top: 20px;
 }
 
 /* responsiveness */
@@ -259,13 +265,20 @@ small{
     .f-img-div{
         text-align: center;
     }
-    .interests{
+    /* .interests{
         margin-top: -450px;
+        text-align: center;
+        padding-bottom: 50px;
+    } */
+    .interests{
         text-align: center;
         padding-bottom: 50px;
     }
     .interests img{
         margin-top: 20px;
+    }
+    .slick-slide img{
+        min-width: 100%;
     }
 
 }
@@ -277,7 +290,7 @@ small{
     .about-btn , .email-btn , .about-text , .master{
         width: 100%;
     }
-    .work , .interests{
+    .work{
         margin-top: 80px;
     }
     .skills-all{
@@ -306,6 +319,9 @@ small{
    }
    .interests{
        margin-top: -700px;
+   }
+   .email-btn{
+       width: 75%;
    }
 
 }
