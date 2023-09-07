@@ -2,6 +2,13 @@
     src: url("font/SofiaProRegular.ttf");
     font-family: "Sofia Pro";
 }
+@font-face {
+    font-family: 'Hylia Serif';
+    src: url('HyliaSerifBeta-Regular.otf') format('opentype'); 
+}
+.hylia-serif {
+    font-family: 'Hylia Serif', serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -279,6 +286,11 @@ small{
     }
     .slick-slide img{
         min-width: 100%;
+    }
+    .slider-row .img-fluid {
+        width: 300px !important;
+        height: 200px !important;
+        object-fit: cover !important;
     }
 
 }
