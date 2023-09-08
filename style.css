@@ -31,10 +31,9 @@ html{
     width: 80%;
 }
 .about .list-1{
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }
 .about h1{
     font-size: 40px;
@@ -55,12 +54,15 @@ html{
     background-color: black !important;
     color: white !important;
 }
+.all-buttons{
+    max-width: 90%;
+}
 .email-btn{
     background-color: black !important;
     color: white !important;
-    width: 90%;
-    margin-top: 10px;
     padding-block: 10px;
+    min-width: 100%;
+    margin-top: 20px;
 }
 small{
     font-size: 18px;
@@ -136,7 +138,6 @@ small{
 }
 .frame-img{
     width: 75%;
-    vertical-align: top;
 }
 .work-sub{
     color: #EBAD48;
@@ -211,12 +212,16 @@ small{
     .about-text{
         min-width: 100%;
     }
+    .all-buttons{
+        min-width: 100%;
+    }
+    .about .list-1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
     .about-btn{
         width: 100%;
-        font-size: 12px;
-    }
-    .email-btn{
-        min-width: 100%;
+        padding-inline: 5px;
     }
     .o-2{
         order: 2;
@@ -272,11 +277,6 @@ small{
     .f-img-div{
         text-align: center;
     }
-    /* .interests{
-        margin-top: -450px;
-        text-align: center;
-        padding-bottom: 50px;
-    } */
     .interests{
         text-align: center;
         padding-bottom: 50px;
@@ -297,6 +297,13 @@ small{
     .about-btn , .email-btn , .about-text , .master{
         width: 100%;
     }
+    .about-btn{
+        padding-inline: 5px;
+        font-size: 10px;
+    }
+    .about .list-1{
+        gap: 5px;
+    }
     .work{
         margin-top: 80px;
     }
@@ -307,7 +314,7 @@ small{
         flex-wrap: wrap;
     }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1400px) {
     html{
         max-width: 100%;
         overflow-x: hidden;
@@ -315,19 +322,16 @@ small{
     .a-div{
         padding-top: 80px;
     }
-   .about-btn{
-       width: 180px;
-   }
-   .skills , .projects-section{
-       padding-top: 100px;
-   }
-   .work{
-       margin-top: -200px;
-   }
-   .interests{
-       margin-top: -700px;
-   }
-   .email-btn{
-       width: 75%;
-   }
+    .skills , .projects-section{
+        padding-top: 100px;
+    }
+    .work{
+        margin-top: 30px;
+    }
+    .interests{
+        margin-top: 100px;
+    }
+    .about-btn{
+        min-width: 100%;
+    }
 }
