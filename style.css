@@ -200,6 +200,17 @@ small{
     margin-top: 20px;
 }
 
+.column {
+    width: 135px;  /* Set width */
+    padding: 1px 0px;  /* Adjust padding to reduce gap */
+    display: flex;
+    align-items: center;
+}
+.custom-btn {
+    height: 40px;  /* Set height */
+}
+
+
 /* responsiveness */
 @media screen and (max-width: 767px) {
     html{
